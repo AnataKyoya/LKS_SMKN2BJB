@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1000px;
+    height: 600px;
+    background: url("./Images/background.jpg") no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.posa {
+    position: absolute;
+}
+
+.d-flex {
+    display: flex;
+    gap: 10px;
+}
+
+.start {
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    top: 50px;
+}
+
+.inputan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#username {
+    font-size: 2em;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #1f1f1f;
+    padding: 10px 0;
+    outline: 0;
+    text-align: center;
+}
+
+.level div {
+    width: 50px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fafafa00;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+}
+
+.level div:hover {
+    width: 100px;
+    color: #fafafa;
+}
+
+.level div.active {
+    width: 100px;
+    color: #fafafa;
+}
+
+.level div:nth-child(1),
+.btn-save,
+.btn-continue,
+.btn-restart {
+    background-color: #fab300;
+}
+
+.level div:nth-child(2) {
+    background-color: #e07000;
+}
+
+.level div:nth-child(3) {
+    background-color: #e00000;
+}
+
+.button {
+    width: fit-content;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fafafa;
+}
+
+.btn-play {
+    background-color: #737373;
+    cursor: not-allowed;
+}
+
+.btn-inst,
+.btn-leaderboard,
+.btn-reset {
+    background-color: #1f1f1f;
+}
+
+.instruction {
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    z-index: 3;
+    padding: 50px;
+    color: #fafafa;
+    font-size: 1.5em;
+    display: none;
+}
+
+.instruction.active {
+    display: block;
+}
+
+.close {
+    right: 50px;
+    cursor: pointer;
+    background-color: #950000;
+    color: #fafafa;
+    font-weight: 800;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.instruction ul {
+    margin-left: 25px;
+    list-style: decimal;
+}
+
+.status {
+    right: 0;
+    width: 268px;
+    height: 100%;
+    background-color: #1f1f1f;
+    padding: 30px;
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-item {
+    align-items: center;
+}
+
+.img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.img-item .img {
+    width: 60px;
+}
+
+.heart {
+    margin: 20px 0;
+}
+
+.img-h .img {
+    overflow: hidden;
+    width: 34px;
+}
+
+.img-h .img.lose {
+    display: none;
+    align-items: end;
+    justify-content: end;
+}
+
+.all-role {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f7c;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    color: #fafafa;
+    z-index: 9;
+}
+
+.pause,
+.game-over,
+.leaderboard {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item-get {
+    gap: 30px;
+}
+
+.item-get .img img {
+    width: fit-content;
+    height: 100%;
+}
+
+.item-get .img {
+    height: 30px;
+}
+
+.demo .header {
+    align-items: center;
+}
+
+.player-name {
+    width: 150px;
+}
+
+.header .time {
+    width: 80px;
+}
+
+.demo ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.get-item {
+    gap: 34px;
+    margin-left: 40px;
+}
+
+.get-item p {
+    width: 30px;
+    text-align: center;
+}

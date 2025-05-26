@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="instruction posa">
+                <div class="close btn-inst posa">X</div>
+                <h1>How to play game</h1>
+                <ul>
+                    <li>Input Username</li>
+                    <li>Put the bomb</li>
+                    <li>Blow up as many walls as possible</li>
+                    <li>Blow up enemies</li>
+                    <li>Enjoy!</li>
+                </ul>
+            </div>
+
+            <div class="start posa">
+                <div class="logo posa">
+                    <img src="./Images/logo.png" alt="" />
+                </div>
+                <div class="inputan">
+                    <input type="text" id="username" />
+                    <div class="level d-flex">
+                        <div>easy</div>
+                        <div>medium</div>
+                        <div>hard</div>
+                    </div>
+                    <div class="btn d-flex">
+                        <div class="button btn-play">play</div>
+                        <div class="button btn-inst">instruction</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="status posa">
+                <div class="logo-name">
+                    <img src="./Images/logo_white.png" alt="" />
+                </div>
+                <h1 class="username">username</h1>
+                <p class="timer">timer</p>
+                <div class="heart">
+                    <div class="img-h d-flex">
+                        <div class="heart-indi">
+                            <div class="img">
+                                <img
+                                    src="./Images/heart_indicator.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="img lose">
+                                <img
+                                    src="./Images/heart_indicator.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="heart-indi">
+                            <div class="img">
+                                <img
+                                    src="./Images/heart_indicator.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="img lose">
+                                <img
+                                    src="./Images/heart_indicator.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="heart-indi">
+                            <div class="img">
+                                <img
+                                    src="./Images/heart_indicator.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="img lose">
+                                <img
+                                    src="./Images/heart_indicator.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-item d-flex">
+                    <div class="img">
+                        <img src="./Images/wall_crack.png" alt="" />
+                    </div>
+                    <p class="wall">= 0</p>
+                </div>
+                <div class="img-item d-flex">
+                    <div class="img">
+                        <img src="./Images/tnt.png" alt="" />
+                    </div>
+                    <p class="tnt">= 0</p>
+                </div>
+                <div class="img-item d-flex">
+                    <div class="img">
+                        <img src="./Images/ice.png" alt="" />
+                    </div>
+                    <p class="ice">= 0</p>
+                </div>
+            </div>
+
+            <div class="all-role posa">
+                <h1 class="countDown"></h1>
+                <div class="pause">
+                    <h1>Game Pauses</h1>
+                    <div class="button btn-continue">continue</div>
+                </div>
+                <div class="game-over">
+                    <h1>Game Over!</h1>
+                    <div class="over-player d-flex">
+                        <p>Good job</p>
+                        <p class="username-over"></p>
+                        <p>your time</p>
+                        <p class="timer-over"></p>
+                        <p>with result:</p>
+                    </div>
+                    <div class="img-item-game d-flex">
+                        <div class="img-item d-flex">
+                            <div class="img">
+                                <img src="./Images/wall_crack.png" alt="" />
+                            </div>
+                            <p class="wall-over">= 0</p>
+                        </div>
+                        <div class="img-item d-flex">
+                            <div class="img">
+                                <img src="./Images/tnt.png" alt="" />
+                            </div>
+                            <p class="tnt-over">= 0</p>
+                        </div>
+                        <div class="img-item d-flex">
+                            <div class="img">
+                                <img src="./Images/ice.png" alt="" />
+                            </div>
+                            <p class="ice-over">= 0</p>
+                        </div>
+                    </div>
+                    <div class="button btn-save">save score</div>
+                    <div class="button btn-leaderboard">leaderboards</div>
+                </div>
+                <div class="leaderboard">
+                    <h1>Leaderboards</h1>
+                    <div class="demo">
+                        <div class="header d-flex">
+                            <div class="player-name">Player Name</div>
+                            <div class="time">Time</div>
+                            <div class="item-get d-flex">
+                                <div class="img">
+                                    <img src="./Images/wall_crack.png" alt="" />
+                                </div>
+
+                                <div class="img">
+                                    <img src="./Images/tnt.png" alt="" />
+                                </div>
+
+                                <div class="img">
+                                    <img src="./Images/ice.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="d-flex">
+                                <p class="player-name">halo bang</p>
+                                <p class="time">00:00</p>
+                                <span class="get-item d-flex">
+                                    <p>1</p>
+                                    <p>1</p>
+                                    <p>1</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <div class="button btn-restart">play again</div>
+                        <div class="button btn-reset">reset</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="char posa">
+                <img class="item-onhead posa" src="" alt="" />
+                <img class="char-img" src="" alt="" />
+            </div>
+
+            <div class="heart-items posa">
+                <img src="" alt="" />
+            </div>
+
+            <div class="ice-items posa">
+                <img src="" alt="" />
+            </div>
+
+            <div class="tnt-items posa">
+                <img src="" alt="" />
+            </div>
+
+            <div class="bomb-items posa">
+                <img src="" alt="" />
+            </div>
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <script src="vanilla.js"></script>
+    </body>
+</html>
